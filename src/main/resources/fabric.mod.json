@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "obm",
+  "version": "${version}",
+
+  "name": "Environmental Armor",
+  "description": "Adds items, armor, and potions to protect players from certain origins.",
+  "authors": [
+    "QuartzBlock"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/enva/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.quartzblock.environmentalarmor.Main"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json",
+    {
+      "config": "modid.mixins.json",
+      "environment": "server"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

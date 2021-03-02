@@ -4,6 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectType;
 import net.minecraft.entity.player.PlayerEntity;
+import io.github.apace100.origins.power.factory.PowerFactory;
 
 public class WaterRessistance extends StatusEffect {
     public WaterRessistance() {

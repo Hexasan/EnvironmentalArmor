@@ -11,7 +11,6 @@ public class WaterResistance extends StatusEffect {
         super(StatusEffectType.BENEFICIAL, 0x00BBFF);
     }
 
-
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
 
@@ -23,7 +22,7 @@ public class WaterResistance extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity) {
             PlayerEntity player = (PlayerEntity) entity;
-            player.sendMessage(new LiteralText("You has effect"), false);
+            player.sendMessage(new LiteralText("You has effect at with the strength of " + amplifier), false);
         }
     }
 }

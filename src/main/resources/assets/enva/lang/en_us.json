@@ -2,7 +2,8 @@
   "item.enva.glass_bowl": "Glass Bowl",
   "item.enva.water_glass_bowl": "Water Glass Bowl",
   "item.enva.glass_helmet": "Glass Helmet",
-  "item.minecraft.potion.effect.water_resistance": "Water Resistance",
+  "item.minecraft.potion.effect.water_resistance": "Potion of Water Resistance",
   "item.minecraft.splash_potion.effect.water_resistance": "Splash Potion of Water Resistance",
-  "item.minecraft.lingering_potion.effect.water_resistance": "Lingering Potion of Water Resistance"
+  "item.minecraft.lingering_potion.effect.water_resistance": "Lingering Potion of Water Resistance",
+  "effect.enva.water_resistance": "Water Resistance"
 }

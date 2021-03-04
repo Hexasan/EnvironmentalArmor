@@ -10,7 +10,7 @@ public class ModEffects {
 
     public static final StatusEffect WATER_RESISTANCE = new WaterResistance();
 
-    public static void registerEnchants() {
+    public static void registerEffects() {
         Registry.register(Registry.STATUS_EFFECT, new Identifier(Main.MOD_ID, "water_protect"), WATER_RESISTANCE);
     }
 }

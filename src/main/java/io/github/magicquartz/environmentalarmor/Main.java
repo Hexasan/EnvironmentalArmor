@@ -1,6 +1,7 @@
 package io.github.magicquartz.environmentalarmor;
 
 import io.github.magicquartz.environmentalarmor.registry.ModArmor;
+import io.github.magicquartz.environmentalarmor.registry.ModEffects;
 import io.github.magicquartz.environmentalarmor.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,5 +13,6 @@ public class Main implements ModInitializer {
     public void onInitialize() {
         ModItems.registerItems();
         ModArmor.registerArmor();
+        ModEffects.registerEffects();
     }
 }

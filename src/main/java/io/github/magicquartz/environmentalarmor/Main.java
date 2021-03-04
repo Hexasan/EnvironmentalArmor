@@ -1,7 +1,7 @@
-package com.quartzblock.environmentalarmor;
+package io.github.magicquartz.environmentalarmor;
 
-import com.quartzblock.environmentalarmor.registry.ModArmor;
-import com.quartzblock.environmentalarmor.registry.ModItems;
+import io.github.magicquartz.environmentalarmor.registry.ModArmor;
+import io.github.magicquartz.environmentalarmor.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 public class Main implements ModInitializer {

@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.quartzblock.environmentalarmor.mixin",
+  "package": "io.github.magicquartz.environmentalarmor.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "LivingEntityMixin"

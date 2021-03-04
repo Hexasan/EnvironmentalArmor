@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "obm",
+  "id": "enva",
   "version": "${version}",
 
   "name": "Environmental Armor",
   "description": "Adds items, armor, and potions to protect players from certain origins.",
   "authors": [
-    "QuartzBlock"
+    "MagicQuartz"
   ],
   "contact": {
     "homepage": "",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.quartzblock.environmentalarmor.Main"
+      "io.github.magicquartz.environmentalarmor.Main"
     ]
   },
   "mixins": [

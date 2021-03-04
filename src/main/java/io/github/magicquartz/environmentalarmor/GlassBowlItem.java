@@ -1,6 +1,6 @@
-package com.quartzblock.environmentalarmor;
+package io.github.magicquartz.environmentalarmor;
 
-import com.quartzblock.environmentalarmor.registry.ModArmor;
+import io.github.magicquartz.environmentalarmor.registry.ModArmor;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -32,10 +32,10 @@ public class GlassBowlItem extends Item {
                 world.setBlockState(blockPos, Blocks.AIR.getDefaultState());
                 return new TypedActionResult<>(ActionResult.SUCCESS,  new ItemStack(ModArmor.WATER_GLASS_HELMET, 1));
             } else {
-                return new TypedActionResult<ItemStack>(ActionResult.PASS, playerEntity.getStackInHand(hand));
+                return new TypedActionResult<>(ActionResult.PASS, playerEntity.getStackInHand(hand));
             }
         } else {
-            return new TypedActionResult<ItemStack>(ActionResult.PASS, playerEntity.getStackInHand(hand));
+            return new TypedActionResult<>(ActionResult.PASS, playerEntity.getStackInHand(hand));
         }
     }
 }

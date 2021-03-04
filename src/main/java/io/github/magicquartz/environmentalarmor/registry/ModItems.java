@@ -1,7 +1,7 @@
-package com.quartzblock.environmentalarmor.registry;
+package io.github.magicquartz.environmentalarmor.registry;
 
-import com.quartzblock.environmentalarmor.GlassBowlItem;
-import com.quartzblock.environmentalarmor.Main;
+import io.github.magicquartz.environmentalarmor.GlassBowlItem;
+import io.github.magicquartz.environmentalarmor.Main;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;

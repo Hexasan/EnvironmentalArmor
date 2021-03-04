@@ -1,8 +1,8 @@
-package com.quartzblock.environmentalarmor.registry;
+package io.github.magicquartz.environmentalarmor.registry;
 
-import com.quartzblock.environmentalarmor.Main;
-import com.quartzblock.environmentalarmor.armor.GlassArmorMaterial;
-import com.quartzblock.environmentalarmor.armor.WaterGlassArmorMaterial;
+import io.github.magicquartz.environmentalarmor.armor.WaterGlassArmorMaterial;
+import io.github.magicquartz.environmentalarmor.Main;
+import io.github.magicquartz.environmentalarmor.armor.GlassArmorMaterial;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;

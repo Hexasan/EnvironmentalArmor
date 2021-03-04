@@ -1,6 +1,6 @@
-package com.quartzblock.environmentalarmor.mixin;
+package io.github.magicquartz.environmentalarmor.mixin;
 
-import com.quartzblock.environmentalarmor.registry.ModArmor;
+import io.github.magicquartz.environmentalarmor.registry.ModArmor;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

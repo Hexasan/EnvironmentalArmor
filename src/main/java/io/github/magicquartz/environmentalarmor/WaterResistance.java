@@ -6,6 +6,7 @@ import net.minecraft.entity.effect.StatusEffectType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.LiteralText;
 
+
 public class WaterResistance extends StatusEffect {
     public WaterResistance() {
         super(StatusEffectType.BENEFICIAL, 0x00BBFF);
@@ -22,7 +23,7 @@ public class WaterResistance extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity) {
             PlayerEntity player = (PlayerEntity) entity;
-            player.sendMessage(new LiteralText("You has effect at with the strength of " + amplifier), false);
+            player.sendMessage(new LiteralText("Mama."), true);
         }
     }
 }

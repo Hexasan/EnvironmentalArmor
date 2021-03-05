@@ -4,7 +4,6 @@
   "package": "io.github.magicquartz.environmentalarmor.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "LivingEntityMixin"
   ],
   "client": [
   ],

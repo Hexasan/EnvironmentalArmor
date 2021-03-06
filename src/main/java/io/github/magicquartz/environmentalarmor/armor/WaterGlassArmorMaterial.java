@@ -35,7 +35,7 @@ public class WaterGlassArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "magnesium";
+        return "water_glass";
     }
 
     @Override

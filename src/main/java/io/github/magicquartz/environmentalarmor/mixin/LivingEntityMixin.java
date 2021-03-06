@@ -38,13 +38,13 @@ public abstract class LivingEntityMixin extends Entity {
         if(helmetStack.getItem().equals(ModArmor.WATER_GLASS_HELMET)) {
             if(!isSubmergedInWater()) {
                 if(!hasStatusEffect(StatusEffects.WATER_BREATHING)) {
-                    addStatusEffect(new StatusEffectInstance(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 70)));
+                    addStatusEffect(new StatusEffectInstance(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 70, 0, false, false)));
                 }
             }
         } if(helmetStack.getItem().equals(ModArmor.GLASS_HELMET)) {
             if(isSubmergedInWater()) {
-                if(!hasStatusEffect(StatusEffects.WATER_BREATHING)) {
-                    addStatusEffect(new StatusEffectInstance(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 70)));
+                if(hasStatusEffect(StatusEffects.WATER_BREATHING)) {
+                    addStatusEffect(new StatusEffectInstance(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 70, 0, false, false)));
                 }
             }
         }

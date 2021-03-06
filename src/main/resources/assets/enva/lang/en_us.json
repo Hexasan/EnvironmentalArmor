@@ -5,5 +5,13 @@
   "item.minecraft.potion.effect.water_resistance": "Potion of Water Resistance",
   "item.minecraft.splash_potion.effect.water_resistance": "Splash Potion of Water Resistance",
   "item.minecraft.lingering_potion.effect.water_resistance": "Lingering Potion of Water Resistance",
-  "effect.enva.water_resistance": "Water Resistance"
+  "item.minecraft.tipped_arrow.effect.water_resistance": "Arrow of Water Resistance",
+  "effect.enva.water_resistance": "Water Resistance",
+  "item.enva.magnesium_helmet": "Magnesium Helmet",
+  "item.enva.magnesium_chestplate": "Magnesium Chestplate",
+  "item.enva.magnesium_leggings": "Magnesium Leggings",
+  "item.enva.magnesium_boots": "Magnesium Boots",
+  "item.enva.magnesium_ingot": "Magnesium Ingot",
+  "item.enva.magnesium_dust": "Magnesium Dust",
+  "block.enva.magnesium_ore": "Magnesium Ore"
 }

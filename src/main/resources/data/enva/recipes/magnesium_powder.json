@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "enva:magnesium_ingot"
+    }
+  ],
+  "result": {
+    "item": "enva:magnesium_powder",
+    "count": 9
+  }
+}

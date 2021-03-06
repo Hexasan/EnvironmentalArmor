@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "enva:magnesium_ore"
+  },
+  "result": "enva:magnesium_ingot",
+  "experience": 0.3,
+  "cookingtime": 200
+}

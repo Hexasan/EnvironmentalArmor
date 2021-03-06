@@ -11,7 +11,7 @@ import net.minecraft.sound.SoundEvents;
 public class MagnesiumArmorMaterial implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[] {1, 1, 1, 1};
+    private static final int[] PROTECTION_VALUES = new int[] {1, 4, 5, 2};
 
     @Override
     public int getDurability(EquipmentSlot slot) {
@@ -45,11 +45,11 @@ public class MagnesiumArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 1.5F;
+        return 4F;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0.2F;
+        return 0.5F;
     }
 }

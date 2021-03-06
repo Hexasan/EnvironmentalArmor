@@ -17,7 +17,7 @@ public class ModItems {
     public static final Item MAGNESIUM_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     public static final Item MAGNESIUM_DUST = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     public static final BlockItem MAGNESIUM_ORE = new BlockItem(ModBlocks.MAGNESIUM_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final BlockItem MAGNESIUM_BLOCK = new BlockItem(ModBlocks.MAGNESIUM_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final BlockItem MAGNESIUM_BLOCK = new BlockItem(ModBlocks.MAGNESIUM_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "glass_bowl"), GLASS_BOWL);

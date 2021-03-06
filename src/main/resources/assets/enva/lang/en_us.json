@@ -13,5 +13,6 @@
   "item.enva.magnesium_boots": "Magnesium Boots",
   "item.enva.magnesium_ingot": "Magnesium Ingot",
   "item.enva.magnesium_dust": "Magnesium Dust",
-  "block.enva.magnesium_ore": "Magnesium Ore"
+  "block.enva.magnesium_ore": "Magnesium Ore",
+  "block.enva.magnesium_block": "Magnesium Block"
 }

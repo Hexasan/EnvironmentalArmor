@@ -9,4 +9,5 @@ import net.minecraft.util.Identifier;
 public class EnvironmentalArmorPowers {
 
     public static final PowerType<Power> WATER_DAMAGE = new PowerTypeReference(new Identifier(Origins.MODID, "water_vulnerability"));
+    public static final PowerType<Power> STINGER = new PowerTypeReference(new Identifier("moborigins", "stinger"));
 }

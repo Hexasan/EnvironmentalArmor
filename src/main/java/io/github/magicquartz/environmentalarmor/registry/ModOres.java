@@ -17,7 +17,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class ModOres {
-    private static ConfiguredFeature<?, ?> ORE_MAGNESIUM_END = Feature.ORE
+    private static final ConfiguredFeature<?, ?> ORE_MAGNESIUM_END = Feature.ORE
             .configure(new OreFeatureConfig(
                     new BlockMatchRuleTest(Blocks.END_STONE), // base block is endstone in the end biomes
                     ModBlocks.MAGNESIUM_ORE.getDefaultState(),

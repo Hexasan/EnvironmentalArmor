@@ -1,6 +1,5 @@
 package io.github.magicquartz.environmentalarmor.mixin;
 
-import io.github.magicquartz.environmentalarmor.extensions.BrewingRecipeRegistryAccessor;
 import io.github.magicquartz.environmentalarmor.registry.ModEffects;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
@@ -15,7 +14,6 @@ public class BrewingRecipeRegistryMixin {
 
     @Inject(method = "registerDefaults", at = @At("TAIL"))
     private static void addPotionRecipes(CallbackInfo ci) {
-
         BrewingRecipeRegistryAccessor.getPotionRegistry(Potions.AWKWARD, Items.SCUTE, ModEffects.WATER_RESISTANCE_POTION);
     }
 }

@@ -1,4 +1,4 @@
-package io.github.magicquartz.environmentalarmor.extensions;
+package io.github.magicquartz.environmentalarmor.mixin;
 
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;

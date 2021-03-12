@@ -1,16 +1,11 @@
 package io.github.magicquartz.environmentalarmor.mixin;
 
-import io.github.apace100.origins.component.OriginComponent;
-import io.github.apace100.origins.power.TargetActionOnHitPower;
-import io.github.magicquartz.environmentalarmor.CustomDamageSource;
+import io.github.magicquartz.environmentalarmor.extensions.CustomDamageSource;
 import io.github.magicquartz.environmentalarmor.power.EnvironmentalArmorPowers;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;

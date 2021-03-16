@@ -41,17 +41,10 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
     @Inject(at = @At("TAIL"), method = "tick")
     private void tick(CallbackInfo info) throws InterruptedException {
-        sendMessage(new LiteralText("Player Age: " + this.age), false);
         if(OriginComponent.hasPower(this, DamageOverTimePower.class) && isTouchingWaterOrRain() && hasStatusEffect(ModEffects.WATER_RESISTANCE) && EnvironmentalArmorPowers.WATER_DAMAGE.isActive(this)) {
             // For enderians and blazeborns which are vulnerable to water.
             List<DamageOverTimePower> powers = OriginComponent.getPowers(this, DamageOverTimePower.class);
             powers.get(0).setValue(20);
-        }
-        if(OriginComponent.hasPower(this, BurnPower.class) && hasStatusEffect(ModEffects.SUNSCREEN) && EnvironmentalArmorPowers.SUN_DAMAGE.isActive(this)) {
-            List<BurnPower> powers = OriginComponent.getPowers(this, BurnPower.class);
-            sendMessage(new LiteralText("You are exposed to the sun with the effect on."), false);
-            //powers.get(0);
-            //ModRegistries.ENTITY_CONDITION.
         }
     }
 }

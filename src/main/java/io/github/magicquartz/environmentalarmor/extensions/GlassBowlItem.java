@@ -1,4 +1,4 @@
-package io.github.magicquartz.environmentalarmor;
+package io.github.magicquartz.environmentalarmor.extensions;
 
 import io.github.magicquartz.environmentalarmor.registry.ModArmor;
 import net.minecraft.block.*;

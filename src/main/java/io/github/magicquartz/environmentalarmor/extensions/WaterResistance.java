@@ -1,4 +1,4 @@
-package io.github.magicquartz.environmentalarmor;
+package io.github.magicquartz.environmentalarmor.extensions;
 
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectType;

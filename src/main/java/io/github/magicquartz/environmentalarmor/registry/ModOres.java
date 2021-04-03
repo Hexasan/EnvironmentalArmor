@@ -29,9 +29,9 @@ public class ModOres {
             .spreadHorizontally()
             .repeat(20);
 
-    public static void registerOres() {
+    public static void register() {
         RegistryKey<ConfiguredFeature<?, ?>> oreMagnesiumEnd = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
-                new Identifier(Main.MOD_ID, "magnesium_ore_end"));
+                Main.identifier("magnesium_ore_end"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreMagnesiumEnd.getValue(), ORE_MAGNESIUM_END);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, oreMagnesiumEnd);
     }

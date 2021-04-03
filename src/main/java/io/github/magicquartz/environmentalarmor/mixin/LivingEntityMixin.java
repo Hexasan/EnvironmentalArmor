@@ -22,8 +22,6 @@ public abstract class LivingEntityMixin extends Entity {
 
     @Shadow @Final private DefaultedList<ItemStack> equippedArmor;
 
-    @Shadow public abstract boolean isMobOrPlayer();
-
     @Shadow public abstract boolean addStatusEffect(StatusEffectInstance effect);
 
     @Shadow public abstract boolean hasStatusEffect(StatusEffect effect);

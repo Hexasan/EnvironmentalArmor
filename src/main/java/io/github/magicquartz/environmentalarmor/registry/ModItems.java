@@ -23,17 +23,17 @@ public class ModItems {
     //Sunscreen
     public static final ToolItem SUNSCREEN = new SunscreenItem(new MagnesiumToolMaterial(), new Item.Settings().group(ItemGroup.TOOLS).maxCount(1).maxDamage(3));
 
-    public static void registerItems() {
+    public static void register() {
         //Glass bowl
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "glass_bowl"), GLASS_BOWL);
+        Registry.register(Registry.ITEM, Main.identifier("glass_bowl"), GLASS_BOWL);
 
         // Magnesium
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_ingot"), MAGNESIUM_INGOT);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_dust"), MAGNESIUM_DUST);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_ore"), MAGNESIUM_ORE);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_block"), MAGNESIUM_BLOCK);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_ingot"), MAGNESIUM_INGOT);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_dust"), MAGNESIUM_DUST);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_ore"), MAGNESIUM_ORE);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_block"), MAGNESIUM_BLOCK);
 
         //Sunscreen
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sunscreen"), SUNSCREEN);
+        Registry.register(Registry.ITEM, Main.identifier("sunscreen"), SUNSCREEN);
     }
 }

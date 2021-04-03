@@ -17,9 +17,9 @@ public class ModEffects {
 
     public static final StatusEffect SUNSCREEN = new SunResistance();
 
-    public static void registerEffects() {
-        Registry.register(Registry.STATUS_EFFECT, new Identifier(Main.MOD_ID, "water_resistance"), WATER_RESISTANCE);
-        Registry.register(Registry.POTION, new Identifier(Main.MOD_ID, "water_resist_potion"), WATER_RESISTANCE_POTION);
-        Registry.register(Registry.STATUS_EFFECT, new Identifier(Main.MOD_ID, "sunscreen"), SUNSCREEN);
+    public static void register() {
+        Registry.register(Registry.STATUS_EFFECT, Main.identifier("water_resistance"), WATER_RESISTANCE);
+        Registry.register(Registry.POTION, Main.identifier("water_resist_potion"), WATER_RESISTANCE_POTION);
+        Registry.register(Registry.STATUS_EFFECT, Main.identifier("sunscreen"), SUNSCREEN);
     }
 }

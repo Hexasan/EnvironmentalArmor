@@ -2,6 +2,7 @@ package io.github.magicquartz.environmentalarmor;
 
 import io.github.magicquartz.environmentalarmor.registry.*;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 
 public class Main implements ModInitializer {
 
@@ -9,10 +10,14 @@ public class Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.registerItems();
-        ModArmor.registerArmor();
-        ModEffects.registerEffects();
-        ModOres.registerOres();
-        ModBlocks.registerBlocks();
+        ModBlocks.register();
+        ModItems.register();
+        ModArmor.register();
+        ModEffects.register();
+        ModOres.register();
+    }
+
+    public static Identifier identifier(String id) {
+        return new Identifier(MOD_ID, id);
     }
 }

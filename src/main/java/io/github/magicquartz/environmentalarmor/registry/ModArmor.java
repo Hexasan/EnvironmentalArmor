@@ -21,14 +21,14 @@ public class ModArmor {
     public static final Item MAGNESIUM_LEGGINGS = new ArmorItem(new MagnesiumArmorMaterial(), EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item MAGNESIUM_BOOTS = new ArmorItem(new MagnesiumArmorMaterial(), EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
-    public static void registerArmor() {
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "glass_helmet"), GLASS_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "water_glass_bowl"), WATER_GLASS_HELMET);
+    public static void register() {
+        Registry.register(Registry.ITEM, Main.identifier("glass_helmet"), GLASS_HELMET);
+        Registry.register(Registry.ITEM, Main.identifier("water_glass_bowl"), WATER_GLASS_HELMET);
 
         // Magnesium armor
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_helmet"), MAGNESIUM_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_chestplate"), MAGNESIUM_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_leggings"), MAGNESIUM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "magnesium_boots"), MAGNESIUM_BOOTS);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_helmet"), MAGNESIUM_HELMET);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_chestplate"), MAGNESIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_leggings"), MAGNESIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, Main.identifier("magnesium_boots"), MAGNESIUM_BOOTS);
     }
 }

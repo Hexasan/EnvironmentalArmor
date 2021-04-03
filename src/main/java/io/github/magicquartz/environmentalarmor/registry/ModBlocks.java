@@ -25,8 +25,8 @@ public class ModBlocks {
             .strength(5.0f, 30.0f)
             .sounds(BlockSoundGroup.METAL));
 
-    public static void registerBlocks() {
-        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "magnesium_ore"), MAGNESIUM_ORE);
-        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "magnesium_block"), MAGNESIUM_BLOCK);
+    public static void register() {
+        Registry.register(Registry.BLOCK, Main.identifier("magnesium_ore"), MAGNESIUM_ORE);
+        Registry.register(Registry.BLOCK, Main.identifier("magnesium_block"), MAGNESIUM_BLOCK);
     }
 }

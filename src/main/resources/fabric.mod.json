@@ -23,15 +23,11 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json",
-    {
-      "config": "modid.mixins.json",
-      "environment": "server"
-    }
+    "enva.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.16.x"
   },

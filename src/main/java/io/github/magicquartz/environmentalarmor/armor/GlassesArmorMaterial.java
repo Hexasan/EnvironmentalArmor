@@ -2,16 +2,16 @@ package io.github.magicquartz.environmentalarmor.armor;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class WaterGlassArmorMaterial implements ArmorMaterial {
-
+public class GlassesArmorMaterial implements ArmorMaterial {
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return 5;
+        return 30;
     }
 
     @Override
@@ -36,16 +36,16 @@ public class WaterGlassArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "water_glass";
+        return "glasses";
     }
 
     @Override
     public float getToughness() {
-        return 1;
+        return 0;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 2;
+        return 0;
     }
 }

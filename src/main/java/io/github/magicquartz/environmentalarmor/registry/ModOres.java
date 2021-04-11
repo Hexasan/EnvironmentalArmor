@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -27,7 +26,7 @@ public class ModOres {
                     0,
                     64)))
             .spreadHorizontally()
-            .repeat(20);
+            .repeat(10);
 
     public static void register() {
         RegistryKey<ConfiguredFeature<?, ?>> oreMagnesiumEnd = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,

@@ -6,7 +6,6 @@ import io.github.magicquartz.environmentalarmor.extensions.SunscreenItem;
 import io.github.magicquartz.environmentalarmor.toolmaterials.MagnesiumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {

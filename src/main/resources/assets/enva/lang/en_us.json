@@ -22,6 +22,10 @@
   "block.enva.magnesium_ore": "Magnesium Ore",
   "block.enva.magnesium_block": "Magnesium Block",
 
+  "item.enva.glasses": "Glasses",
+  "text.glasses1": "§8Makes endermen able to see",
+  "text.glasses2": "§8people with pumpkins on their head",
+
   "death.attack.natural_causes": "%1$s died out of natural causes.",
   "death.attack.natural_causes.player": "%1$s died out of natural causes while fighting %2$s."
 }

@@ -25,7 +25,7 @@ public class GlassArmorMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.BLOCK_GLASS_PLACE;
+        return SoundEvents.ITEM_ARMOR_EQUIP_GENERIC;
     }
 
     @Override

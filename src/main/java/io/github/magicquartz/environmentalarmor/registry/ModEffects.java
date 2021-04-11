@@ -6,7 +6,6 @@ import io.github.magicquartz.environmentalarmor.extensions.WaterResistance;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.potion.Potion;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModEffects {

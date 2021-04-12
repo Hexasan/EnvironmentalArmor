@@ -2,15 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
-    "# #"
+    "###",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "enva:magnesium_ingot"
+      "item": "enva:titanium_ingot"
     }
   },
   "result": {
-    "item": "enva:magnesium_helmet",
+    "item": "enva:titanium_block",
     "count": 1
   }
 }

@@ -4,7 +4,7 @@ import io.github.magicquartz.environmentalarmor.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class MagnesiumToolMaterial implements ToolMaterial {
+public class TitaniumToolMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
         return 3;
@@ -32,6 +32,6 @@ public class MagnesiumToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.MAGNESIUM_DUST);
+        return Ingredient.ofItems(ModItems.TITANIUM_DUST);
     }
 }

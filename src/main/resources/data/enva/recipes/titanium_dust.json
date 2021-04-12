@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "enva:magnesium_ingot"
+      "item": "enva:titanium_ingot"
     }
   ],
   "result": {
-    "item": "enva:magnesium_dust",
+    "item": "enva:titanium_dust",
     "count": 9
   }
 }

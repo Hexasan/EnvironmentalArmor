@@ -10,14 +10,14 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block MAGNESIUM_ORE = new Block(FabricBlockSettings
+    public static final Block TITANIUM_ORE = new Block(FabricBlockSettings
             .of(Material.METAL)
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
             .strength(5.0f, 20.0f)
             .sounds(BlockSoundGroup.ANCIENT_DEBRIS));
 
-    public static final Block MAGNESIUM_BLOCK = new Block(FabricBlockSettings
+    public static final Block TITANIUM_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL)
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
@@ -25,7 +25,7 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.METAL));
 
     public static void register() {
-        Registry.register(Registry.BLOCK, Main.identifier("magnesium_ore"), MAGNESIUM_ORE);
-        Registry.register(Registry.BLOCK, Main.identifier("magnesium_block"), MAGNESIUM_BLOCK);
+        Registry.register(Registry.BLOCK, Main.identifier("titanium_ore"), TITANIUM_ORE);
+        Registry.register(Registry.BLOCK, Main.identifier("titanium_block"), TITANIUM_BLOCK);
     }
 }

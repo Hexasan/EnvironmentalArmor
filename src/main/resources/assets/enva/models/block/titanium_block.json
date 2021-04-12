@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "enva:blocks/magnesium_block"
+    "all": "enva:blocks/titanium_block"
   }
 }

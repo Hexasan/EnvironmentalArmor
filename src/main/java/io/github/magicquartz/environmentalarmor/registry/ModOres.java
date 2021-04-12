@@ -16,10 +16,10 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class ModOres {
-    private static final ConfiguredFeature<?, ?> ORE_MAGNESIUM_END = Feature.ORE
+    private static final ConfiguredFeature<?, ?> ORE_TITANIUM_END = Feature.ORE
             .configure(new OreFeatureConfig(
                     new BlockMatchRuleTest(Blocks.END_STONE), // base block is endstone in the end biomes
-                    ModBlocks.MAGNESIUM_ORE.getDefaultState(),
+                    ModBlocks.TITANIUM_ORE.getDefaultState(),
                     9))
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0,
@@ -30,8 +30,8 @@ public class ModOres {
 
     public static void register() {
         RegistryKey<ConfiguredFeature<?, ?>> oreMagnesiumEnd = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
-                Main.identifier("magnesium_ore_end"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreMagnesiumEnd.getValue(), ORE_MAGNESIUM_END);
+                Main.identifier("titanium_ore_end"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreMagnesiumEnd.getValue(), ORE_TITANIUM_END);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, oreMagnesiumEnd);
     }
 }

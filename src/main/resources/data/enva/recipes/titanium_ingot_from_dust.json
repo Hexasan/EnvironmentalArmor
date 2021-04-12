@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
-    "# #"
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "enva:magnesium_ingot"
+      "item": "enva:titanium_dust"
     }
   },
   "result": {
-    "item": "enva:magnesium_boots",
+    "item": "enva:titanium_ingot",
     "count": 1
   }
 }

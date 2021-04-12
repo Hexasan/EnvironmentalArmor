@@ -1,7 +1,7 @@
 package io.github.magicquartz.environmentalarmor.registry;
 
 import io.github.magicquartz.environmentalarmor.armor.GlassesArmorMaterial;
-import io.github.magicquartz.environmentalarmor.armor.MagnesiumArmorMaterial;
+import io.github.magicquartz.environmentalarmor.armor.TitaniumArmorMaterial;
 import io.github.magicquartz.environmentalarmor.armor.WaterGlassArmorMaterial;
 import io.github.magicquartz.environmentalarmor.Main;
 import io.github.magicquartz.environmentalarmor.armor.GlassArmorMaterial;
@@ -19,10 +19,10 @@ public class ModArmor {
     public static final Item GLASSES = new GlassesArmorItem(new GlassesArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.TOOLS).rarity(Rarity.UNCOMMON));
 
     // Magnesium armor
-    public static final Item MAGNESIUM_HELMET = new ArmorItem(new MagnesiumArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item MAGNESIUM_CHESTPLATE = new ArmorItem(new MagnesiumArmorMaterial(), EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item MAGNESIUM_LEGGINGS = new ArmorItem(new MagnesiumArmorMaterial(), EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item MAGNESIUM_BOOTS = new ArmorItem(new MagnesiumArmorMaterial(), EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item TITANIUM_HELMET = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item TITANIUM_CHESTPLATE = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item TITANIUM_LEGGINGS = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item TITANIUM_BOOTS = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
     public static void register() {
         Registry.register(Registry.ITEM, Main.identifier("glass_helmet"), GLASS_HELMET);
@@ -30,9 +30,9 @@ public class ModArmor {
         Registry.register(Registry.ITEM, Main.identifier("glasses"), GLASSES);
 
         // Magnesium armor
-        Registry.register(Registry.ITEM, Main.identifier("magnesium_helmet"), MAGNESIUM_HELMET);
-        Registry.register(Registry.ITEM, Main.identifier("magnesium_chestplate"), MAGNESIUM_CHESTPLATE);
-        Registry.register(Registry.ITEM, Main.identifier("magnesium_leggings"), MAGNESIUM_LEGGINGS);
-        Registry.register(Registry.ITEM, Main.identifier("magnesium_boots"), MAGNESIUM_BOOTS);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_helmet"), TITANIUM_HELMET);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_chestplate"), TITANIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_leggings"), TITANIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_boots"), TITANIUM_BOOTS);
     }
 }

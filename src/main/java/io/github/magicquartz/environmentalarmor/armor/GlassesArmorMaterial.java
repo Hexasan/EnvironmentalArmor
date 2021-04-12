@@ -11,7 +11,7 @@ import net.minecraft.sound.SoundEvents;
 public class GlassesArmorMaterial implements ArmorMaterial {
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return 30;
+        return 5;
     }
 
     @Override

@@ -1,13 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#G#",
-    "###"
+    "#K#",
+    "SGS",
+    "#K#"
   ],
   "key": {
     "#": {
-      "item": "enva:magnesium_dust"
+      "item": "enva:titanium_powder"
+    },
+    "K": {
+      "item": "minecraft:kelp"
+    },
+    "S": {
+      "item": "minecraft:seagrass"
     },
     "G": {
       "item": "minecraft:glass_bottle"

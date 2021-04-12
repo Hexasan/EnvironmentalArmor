@@ -2,6 +2,7 @@ package io.github.magicquartz.environmentalarmor.mixin;
 
 import io.github.apace100.origins.component.OriginComponent;
 import io.github.apace100.origins.power.DamageOverTimePower;
+import io.github.apace100.origins.power.PreventEntityRenderPower;
 import io.github.magicquartz.environmentalarmor.power.EnvironmentalArmorPowers;
 import io.github.magicquartz.environmentalarmor.registry.ModEffects;
 import net.minecraft.entity.EntityType;

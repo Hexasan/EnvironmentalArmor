@@ -31,15 +31,20 @@ public class CustomArmorFeatureRenderer<T extends LivingEntity, M extends Entity
 
     public void render(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, T livingEntity, float f, float g, float h, float j, float k, float l) {
         ItemStack headItem = livingEntity.getEquippedStack(EquipmentSlot.HEAD);
-        if (headItem.getItem() == ModArmor.GLASSES) {
-            matrixStack.push();
-            matrixStack.translate(0.0D, 0.0D, 0.125D);
-            this.getContextModel().copyStateTo(this.glassesHelmet);
-            this.glassesHelmet.setAngles(livingEntity, f, g, j, k, l);
-            VertexConsumer vertexConsumer = ItemRenderer.getArmorGlintConsumer(vertexConsumerProvider,
-                    RenderLayer.getArmorCutoutNoCull(GLASSES_TEXTURE), false, headItem.hasGlint());
-            this.glassesHelmet.render(matrixStack, vertexConsumer, i, OverlayTexture.DEFAULT_UV, 1.0F, 1.0F, 1.0F, 1.0F);
-            matrixStack.pop();
+        if(!headItem.isEmpty()) {
+            if (headItem.getItem() == ModArmor.GLASSES) {
+                matrixStack.push();
+                matrixStack.translate(0.0D, 0.0D, 0.125D);
+                this.getContextModel().copyStateTo(this.glassesHelmet);
+                this.glassesHelmet.setAngles(livingEntity, f, g, j, k, l);
+                VertexConsumer vertexConsumer = ItemRenderer.getArmorGlintConsumer(
+                        vertexConsumerProvider,
+                        RenderLayer.getArmorCutoutNoCull(GLASSES_TEXTURE),
+                        false, headItem.hasGlint()
+                );
+                this.glassesHelmet.render(matrixStack, vertexConsumer, i, OverlayTexture.DEFAULT_UV, 1.0F, 1.0F, 1.0F, 1.0F);
+                matrixStack.pop();
+            }
         }
     }
 }

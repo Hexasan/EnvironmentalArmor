@@ -17,7 +17,6 @@ public class ModArmor {
     //Titanium Coated
     public static final Item TITANIUM_COATED_GLASS_HELMET = new ArmorItem(new TitaniumCoatedArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TITANIUM_COATED_WATER_GLASS_BOWL = new ArmorItem(new TitaniumCoatedArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings());
-    public static final Item TITANIUM_COATED_GLASSES = new ArmorItem(new TitaniumCoatedArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.TOOLS).rarity(Rarity.UNCOMMON));
 
     // Titanium armor
     public static final Item TITANIUM_HELMET = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
@@ -33,7 +32,6 @@ public class ModArmor {
         //Titanium Coated
         Registry.register(Registry.ITEM, Main.identifier("titanium_coated_glass_helmet"), TITANIUM_COATED_GLASS_HELMET);
         Registry.register(Registry.ITEM, Main.identifier("titanium_coated_water_glass_bowl"), TITANIUM_COATED_WATER_GLASS_BOWL);
-        Registry.register(Registry.ITEM, Main.identifier("titanium_coated_glasses"), TITANIUM_COATED_GLASSES);
 
         // Titanium armor
         Registry.register(Registry.ITEM, Main.identifier("titanium_helmet"), TITANIUM_HELMET);

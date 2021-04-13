@@ -33,13 +33,13 @@ public abstract class LivingEntityMixin extends Entity {
     @Inject(at = @At("HEAD"), method = "tick")
     private void tick(CallbackInfo info) {
         ItemStack helmetStack = equippedArmor.get(3);
-        if(helmetStack.getItem().equals(ModArmor.WATER_GLASS_HELMET)) {
+        if(helmetStack.getItem().equals(ModArmor.WATER_GLASS_BOWL) || helmetStack.getItem().equals(ModArmor.TITANIUM_COATED_WATER_GLASS_BOWL)) {
             if(!isSubmergedInWater()) {
                 if(!hasStatusEffect(StatusEffects.WATER_BREATHING)) {
                     addStatusEffect(new StatusEffectInstance(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 70, 0, false, false)));
                 }
             }
-        } if(helmetStack.getItem().equals(ModArmor.GLASS_HELMET)) {
+        } if(helmetStack.getItem().equals(ModArmor.GLASS_HELMET) || helmetStack.getItem().equals(ModArmor.TITANIUM_COATED_GLASS_HELMET)) {
             if(isSubmergedInWater()) {
                 if(!hasStatusEffect(StatusEffects.WATER_BREATHING)) {
                     addStatusEffect(new StatusEffectInstance(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 70, 0, false, false)));

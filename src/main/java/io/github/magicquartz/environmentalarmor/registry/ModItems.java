@@ -3,6 +3,7 @@ package io.github.magicquartz.environmentalarmor.registry;
 import io.github.magicquartz.environmentalarmor.extensions.GlassBowlItem;
 import io.github.magicquartz.environmentalarmor.Main;
 import io.github.magicquartz.environmentalarmor.extensions.SunscreenItem;
+import io.github.magicquartz.environmentalarmor.extensions.TitaniumCoatedGlassBowlItem;
 import io.github.magicquartz.environmentalarmor.toolmaterials.TitaniumToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -12,6 +13,7 @@ public class ModItems {
 
     //Glass bowl
     public static final Item GLASS_BOWL = new GlassBowlItem(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
+    public static final Item TITANIUM_COATED_GLASS_BOWL = new TitaniumCoatedGlassBowlItem(new Item.Settings().group(ItemGroup.TOOLS).maxCount(1));
 
     // Titanium
     public static final Item TITANIUM_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
@@ -25,6 +27,7 @@ public class ModItems {
     public static void register() {
         //Glass bowl
         Registry.register(Registry.ITEM, Main.identifier("glass_bowl"), GLASS_BOWL);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_coated_glass_bowl"), TITANIUM_COATED_GLASS_BOWL);
 
         // Titanium
         Registry.register(Registry.ITEM, Main.identifier("titanium_ingot"), TITANIUM_INGOT);

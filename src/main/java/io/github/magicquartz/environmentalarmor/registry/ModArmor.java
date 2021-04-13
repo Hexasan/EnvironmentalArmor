@@ -1,11 +1,7 @@
 package io.github.magicquartz.environmentalarmor.registry;
 
-import io.github.magicquartz.environmentalarmor.armor.GlassesArmorMaterial;
-import io.github.magicquartz.environmentalarmor.armor.TitaniumArmorMaterial;
-import io.github.magicquartz.environmentalarmor.armor.WaterGlassArmorMaterial;
+import io.github.magicquartz.environmentalarmor.armor.*;
 import io.github.magicquartz.environmentalarmor.Main;
-import io.github.magicquartz.environmentalarmor.armor.GlassArmorMaterial;
-import io.github.magicquartz.environmentalarmor.extensions.GlassesArmorItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -15,10 +11,15 @@ import net.minecraft.util.registry.Registry;
 
 public class ModArmor {
     public static final Item GLASS_HELMET = new ArmorItem(new GlassArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item WATER_GLASS_HELMET = new ArmorItem(new WaterGlassArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings());
-    public static final Item GLASSES = new GlassesArmorItem(new GlassesArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.TOOLS).rarity(Rarity.UNCOMMON));
+    public static final Item WATER_GLASS_BOWL = new ArmorItem(new WaterGlassArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings());
+    public static final Item GLASSES = new ArmorItem(new GlassesArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.TOOLS).rarity(Rarity.COMMON));
 
-    // Magnesium armor
+    //Titanium Coated
+    public static final Item TITANIUM_COATED_GLASS_HELMET = new ArmorItem(new TitaniumCoatedArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item TITANIUM_COATED_WATER_GLASS_BOWL = new ArmorItem(new TitaniumCoatedArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings());
+    public static final Item TITANIUM_COATED_GLASSES = new ArmorItem(new TitaniumCoatedArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.TOOLS).rarity(Rarity.UNCOMMON));
+
+    // Titanium armor
     public static final Item TITANIUM_HELMET = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TITANIUM_CHESTPLATE = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item TITANIUM_LEGGINGS = new ArmorItem(new TitaniumArmorMaterial(), EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
@@ -26,10 +27,15 @@ public class ModArmor {
 
     public static void register() {
         Registry.register(Registry.ITEM, Main.identifier("glass_helmet"), GLASS_HELMET);
-        Registry.register(Registry.ITEM, Main.identifier("water_glass_bowl"), WATER_GLASS_HELMET);
+        Registry.register(Registry.ITEM, Main.identifier("water_glass_bowl"), WATER_GLASS_BOWL);
         Registry.register(Registry.ITEM, Main.identifier("glasses"), GLASSES);
 
-        // Magnesium armor
+        //Titanium Coated
+        Registry.register(Registry.ITEM, Main.identifier("titanium_coated_glass_helmet"), TITANIUM_COATED_GLASS_HELMET);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_coated_water_glass_bowl"), TITANIUM_COATED_WATER_GLASS_BOWL);
+        Registry.register(Registry.ITEM, Main.identifier("titanium_coated_glasses"), TITANIUM_COATED_GLASSES);
+
+        // Titanium armor
         Registry.register(Registry.ITEM, Main.identifier("titanium_helmet"), TITANIUM_HELMET);
         Registry.register(Registry.ITEM, Main.identifier("titanium_chestplate"), TITANIUM_CHESTPLATE);
         Registry.register(Registry.ITEM, Main.identifier("titanium_leggings"), TITANIUM_LEGGINGS);

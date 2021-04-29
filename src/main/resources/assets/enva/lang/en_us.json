@@ -21,11 +21,11 @@
   "item.enva.sunscreen": "Sunscreen",
   "block.enva.titanium_ore": "Titanium Ore",
   "block.enva.titanium_block": "Titanium Block",
-  "item.enva.glasses": "Glasses",
+  "item.enva.glasses": "Ender Glasses",
   "item.enva.titanium_coated_glass_bowl": "Titanium Coated Glass Bowl",
   "item.enva.titanium_coated_water_glass_bowl": "Titanium Coated Water Glass Bowl",
   "item.enva.titanium_coated_glass_helmet": "Titanium Coated Glass Helmet",
-  "item.enva.titanium_coated_glasses": "Titanium Coated Glasses",
+  "item.enva.titanium_coated_glasses": "Titanium Coated Ender Glasses",
 
   "death.attack.natural_causes": "%1$s died out of natural causes.",
   "death.attack.natural_causes.player": "%1$s died out of natural causes while fighting %2$s."

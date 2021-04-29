@@ -1,6 +1,6 @@
 package io.github.magicquartz.environmentalarmor.extensions;
 
-import io.github.magicquartz.environmentalarmor.extensions.GlassesModel;
+import io.github.magicquartz.environmentalarmor.models.GlassesModel;
 import io.github.magicquartz.environmentalarmor.registry.ModArmor;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -8,7 +8,6 @@ import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
-import net.minecraft.client.render.entity.feature.ArmorFeatureRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRendererContext;
 import net.minecraft.client.render.entity.model.EntityModel;
@@ -23,7 +22,7 @@ import net.minecraft.util.Identifier;
 public class CustomArmorFeatureRenderer<T extends LivingEntity, M extends EntityModel<T>> extends FeatureRenderer<T, M> {
     private static final Identifier GLASSES_TEXTURE = new Identifier("textures/armor/glasses.png");
 
-    private final GlassesModel<T> glassesHelmet = new GlassesModel();
+    private final GlassesModel<T> glassesHelmet = new GlassesModel<>();
 
     public CustomArmorFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext) {
         super(featureRendererContext);
@@ -34,7 +33,7 @@ public class CustomArmorFeatureRenderer<T extends LivingEntity, M extends Entity
         if(!headItem.isEmpty()) {
             if (headItem.getItem() == ModArmor.GLASSES) {
                 matrixStack.push();
-                matrixStack.translate(0.0D, 0.0D, 0.125D);
+                matrixStack.translate(0.0D, 0.0D, 0.0D);
                 this.getContextModel().copyStateTo(this.glassesHelmet);
                 this.glassesHelmet.setAngles(livingEntity, f, g, j, k, l);
                 VertexConsumer vertexConsumer = ItemRenderer.getArmorGlintConsumer(
